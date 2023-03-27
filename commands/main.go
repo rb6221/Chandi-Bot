@@ -82,6 +82,6 @@ func StartScheduledTasks() {
 
 func StopScheduledTasks() {
 	if len(ScheduledEvents) > 0 {
-		quit <- "RS{GIT_CHECKOUT_THIS_FLAG}"
+		quit <- "kill"
 	}
 }
