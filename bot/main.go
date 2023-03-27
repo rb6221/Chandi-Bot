@@ -1,6 +1,7 @@
 package bot
 
 import (
+	"github.com/1nv8rzim/Chandi-Bot/config"
 	"github.com/bwmarrin/discordgo"
 )
 
