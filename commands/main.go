@@ -1,8 +1,6 @@
 package commands
 
 import (
-	"log"
-
 	"github.com/1nv8rzim/Chandi-Bot/bot"
 	"github.com/1nv8rzim/Chandi-Bot/commands/handlers"
 	"github.com/1nv8rzim/Chandi-Bot/commands/scheduled"
@@ -69,14 +67,14 @@ func addSlashCommands() {
 func addHandlers() {
 	for name, handler := range Handlers {
 		bot.Session.AddHandler(handler)
-		log.Printf("Registered handler: %s", name)
+		logrus.Infof("Registered handler: %s", name)
 	}
 }
 
 func StartScheduledTasks() {
 	for name, event := range ScheduledEvents {
 		go event.Run(bot.Session, quit)
-		log.Printf("Starting scheduled task: %v\n", name)
+		logrus.Infof("Starting scheduled task: %v\n", name)
 	}
 }
 
