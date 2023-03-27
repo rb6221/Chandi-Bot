@@ -3,6 +3,7 @@ package commands
 import (
 	"log"
 
+	"github.com/1nv8rzim/Chandi-Bot/structs"
 	"github.com/bwmarrin/discordgo"
 	"github.com/sirupsen/logrus"
 )
