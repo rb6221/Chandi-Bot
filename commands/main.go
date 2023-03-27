@@ -3,6 +3,9 @@ package commands
 import (
 	"log"
 
+	"github.com/1nv8rzim/Chandi-Bot/commands/handlers"
+	"github.com/1nv8rzim/Chandi-Bot/commands/scheduled"
+	"github.com/1nv8rzim/Chandi-Bot/commands/slash"
 	"github.com/1nv8rzim/Chandi-Bot/structs"
 	"github.com/bwmarrin/discordgo"
 	"github.com/sirupsen/logrus"
