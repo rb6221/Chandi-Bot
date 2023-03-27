@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/sirupsen/logrus"
-
 	"os"
 	"os/signal"
 
 	"github.com/1nv8rzim/Chandi-Bot/bot"
 	"github.com/1nv8rzim/Chandi-Bot/commands"
+
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
