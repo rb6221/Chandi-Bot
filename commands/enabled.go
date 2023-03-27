@@ -1,5 +1,13 @@
 package commands
 
-func populateSlashCommands()   {}
-func populateHandlers()        {}
-func populateScheduledEvents() {}
+func populateSlashCommands() {
+
+}
+
+func populateHandlers() {
+
+}
+
+func populateScheduledEvents() {
+
+}
