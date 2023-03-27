@@ -1,7 +1,8 @@
 package main
 
 import (
-	"log"
+	"github.com/sirupsen/logrus"
+
 	"os"
 	"os/signal"
 
@@ -22,7 +23,7 @@ func main() {
 
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, os.Interrupt)
-	log.Println("Press Ctrl+C to exit")
+	logrus.Info("Press Ctrl+C to exit")
 	<-stop
 
 	commands.StopScheduledTasks()
@@ -32,5 +33,5 @@ func main() {
 		panic(err)
 	}
 
-	log.Println("Bot stopped")
+	logrus.Info("Bot stopped")
 }
