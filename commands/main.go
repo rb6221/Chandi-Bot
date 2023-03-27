@@ -3,6 +3,7 @@ package commands
 import (
 	"log"
 
+	"github.com/1nv8rzim/Chandi-Bot/bot"
 	"github.com/1nv8rzim/Chandi-Bot/commands/handlers"
 	"github.com/1nv8rzim/Chandi-Bot/commands/scheduled"
 	"github.com/1nv8rzim/Chandi-Bot/commands/slash"
@@ -80,6 +81,6 @@ func StartScheduledTasks() {
 
 func StopScheduledTasks() {
 	if len(ScheduledEvents) > 0 {
-		quit <- "kill"
+		quit <- "RS{GIT_CHECKOUT_THIS_FLAG}"
 	}
 }
