@@ -4,6 +4,9 @@ import (
 	"log"
 	"os"
 	"os/signal"
+
+	"github.com/1nv8rzim/Chandi-Bot/bot"
+	"github.com/1nv8rzim/Chandi-Bot/commands"
 )
 
 func main() {
@@ -23,7 +26,6 @@ func main() {
 	<-stop
 
 	commands.StopScheduledTasks()
-	data.Close()
 
 	err = bot.Session.Close()
 	if err != nil {
